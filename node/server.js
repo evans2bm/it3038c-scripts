@@ -2,7 +2,6 @@ var http = require("http");
 var fs = require("fs");
 var os = require("os");
 var ip = require("ip");
-var process = require("process");
 
 var server = http.createServer(function(req, res){
     if(req.url === "/") {
@@ -14,7 +13,7 @@ var server = http.createServer(function(req, res){
 
     else if(req.url.match("/sysinfo")){
 
-var totalSeconds = (process.uptime());
+var totalSeconds = os.uptime;
 var totalMinutes = (totalSeconds / 60);
 var totalHours = (totalMinutes / 60);
 var totalDays = (totalHours / 24);
@@ -39,8 +38,8 @@ if(seconds >= 60){
 
         myHostName=os.hostname();
         numberCPU=os.cpus().length;
-        freeMemory=os.freemem()/1024;
-        totalMemory=os.totalmem()/1024;
+        freeMemory=os.freemem()/1048576;
+        totalMemory=os.totalmem()/1048576;
         upTime= "Days: " + parseInt(days) +", Hours: " + parseInt(hours) +", Minutes: " + parseInt(minutes) +", Seconds: " + parseInt(seconds);
         html=`t
         <!DOCTYPE html>
