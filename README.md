@@ -8,8 +8,8 @@ This is my app
 '''javascript
 Javascript code block to highligth whats up in my code
 
-DriveSpaceScript
-================
+### DriveSpaceScript
+
 
 This Script can be used to find out information about disk space for the local machine it is used on.
 
@@ -23,7 +23,7 @@ Before sending the email, the system will prompt you for credentials. These will
 
 Upon Success, the script will display a success message.
 
-Lab 7
-=====
+### Lab 7
+
 
 This will show you how to run the PlaceHolder Script, which uses PlaceHolder Module
