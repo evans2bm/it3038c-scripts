@@ -11,7 +11,7 @@ Javascript code block to highligth whats up in my code
 DriveSpaceScript
 ================
 
- This Script can be used to find out information about disk space for the local machine it is used on.
+This Script can be used to find out information about disk space for the local machine it is used on.
 
 When ran on local machine, it will pull the following system information: Machine Name, Main Disk Name, Disk Space Used, Disk Space Free and Total Disk Space.
 
