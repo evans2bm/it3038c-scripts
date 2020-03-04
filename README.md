@@ -1,13 +1,5 @@
 # README For my IT3038C-Scripts Repository
 
-#### MY APP
-
-
-This is my app
-
-'''javascript
-Javascript code block to highligth whats up in my code
-
 ### DriveSpaceScript
 
 
