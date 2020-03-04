@@ -1,7 +1,7 @@
-README For my IT3038C-Scripts Repository
-==========================================
-MY APP
-======
+# README For my IT3038C-Scripts Repository
+
+### MY APP
+
 
 This is my app
 
