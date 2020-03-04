@@ -24,3 +24,5 @@ Upon Success, the script will display a success message.
 
 Lab 7
 =====
+
+This will show you how to run the PlaceHolder Script, which uses PlaceHolder Module
