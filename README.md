@@ -21,3 +21,6 @@ Note: In line 35 of the script, you must input the "To" email address. This is t
 Before sending the email, the system will prompt you for credentials. These will be the credentials for your gmail account.
 
 Upon Success, the script will display a success message.
+
+Lab 7
+=====
