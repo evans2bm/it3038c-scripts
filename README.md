@@ -18,4 +18,26 @@ Upon Success, the script will display a success message.
 ### Lab 7
 
 
-This will show you how to run the PlaceHolder Script, which uses PlaceHolder Module
+This will show you how to run the WifiToolsScript, which uses the WifiTools Module.
+
+﻿Install-Module -Name WifiTools
+
+Function PublicIP {
+
+$IP = Get-PublicIP
+Write-Host("The Public IP Address is: $IP")
+}
+    
+   
+Function InteraceIP {
+
+$IP= Get-InterfaceIP
+return $IP
+}
+
+Function WifiState {
+
+$Wifi= Get-WifiState
+return $Wifi
+
+}
