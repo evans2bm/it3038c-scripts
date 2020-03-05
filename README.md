@@ -20,24 +20,41 @@ Upon Success, the script will display a success message.
 
 This will show you how to run the WifiToolsScript, which uses the WifiTools Module.
 
-﻿Install-Module -Name WifiTools
+First, the WifiTools Module will be installed:
 
-Function PublicIP {
+    Install-Module -Name WifiTools
 
-$IP = Get-PublicIP
-Write-Host("The Public IP Address is: $IP")
-}
+Now that the module has been installed, we can use the functions that come with it. In this case, we are using GetiPublicIP, Get-InterfaceIP, and WifiState, but there are many others.
+
+    Function PublicIP {
+    $IP = Get-PublicIP
+    Write-Host("The Public IP Address is: $IP")
+    }
     
-   
-Function InteraceIP {
+    Function InteraceIP {
+    $IP= Get-InterfaceIP
+    return $IP
+    }
 
-$IP= Get-InterfaceIP
-return $IP
-}
+    Function WifiState {
+    $Wifi= Get-WifiState
+    return $Wifi
+    }
+    
+Now we just have to import the module:
 
-Function WifiState {
+    Import-Module C:\It3038C-Scripts\PowerShell\WifiToolsScript.psm1
+    
+Finally, we can call the functions from a PowerShell window:
 
-$Wifi= Get-WifiState
-return $Wifi
+    PublicIP
 
-}
+(Will return the Public IP Address)
+
+    InterfaceIP
+    
+(Will return the IP Address of the specified interface, like Ethernet0)
+
+    WifiState
+    
+(Will return state information of the Wi-Fi, if there is Wi-Fi)
