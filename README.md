@@ -23,7 +23,7 @@ In addition to that information, the script will also pull the 5 largest files o
 
 In addition to the added info, the script is made easier to run by adding info to the Get-Credentials section on line 43:
         
-        Send-MailMessage -To "bengevans97@gmail.com" -From "DriveReport@gmail.com" -Subject "$CN Drive Report" -Body $Body -SmtpServer           smtp.gmail.com -Port 587 -UseSsl -Credential (Get-Credential -UserName 'bengevans97@gmail.com' -Message 'Please enter your Email         Credentials')
+        Send-MailMessage -To "bengevans97@gmail.com" -From "DriveReport@gmail.com" -Subject "$CN Drive Report" -Body $Body -SmtpServer  smtp.gmail.com -Port 587 -UseSsl -Credential (Get-Credential -UserName 'bengevans97@gmail.com' -Message 'Please enter your Email Credentials')
         
 The UserName was added so that the user can run the script more than once and not have to keep putting in their username. The password must still be specified each time.
 
