@@ -31,6 +31,16 @@ The username will be that of your gmail account for the email server. The email 
 
 That report will again be sent to the user as an email
 
+### DriveSpaceScript3 (Project 3)
+
+This script is an updated version of DriveSpaceScript2. The code has been cleaned up to run smoother.
+With DriveSpaceScript2, running the script, although successful, returned errors for unaccessible files.
+
+The biggest change was adding the following to line 24:
+
+        -ErrorAction SilentlyContinue
+
+This forces the script to continue without throwing any unwanted errors
 ### Lab 7
 
 
